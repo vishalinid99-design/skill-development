@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application Form</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex; /* Flexbox centering from your 'display' exercise */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* The Container - using Box Model and Padding Shorthand */
+        .form-container {
+            background-color: white;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 30px 20px; /* Top | Left/Right | Bottom */
+            border-radius: 12px;
+            border: 2px solid cadetblue;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* RGBA transparency */
+        }
+
+        h2 {
+            color: cadetblue;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid pink; /* Pink border like your padding exercise */
+            padding-bottom: 10px;
+        }
+
+        /* Form Layout */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block; /* Stacks label above input */
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Input Styling */
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box; /* Crucial so padding doesn't break width */
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* The Action Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: cadetblue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4682b4; /* SteelBlue on hover */
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Student Application</h2>
+        
+        <form action="#">
+            <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course Selection</label>
+                <select id="course" name="course">
+                    <option value="web">Web Development</option>
+                    <option value="python">Python Programming</option>
+                    <option value="uiux">UI/UX Design</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Why are you applying?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals..."></textarea>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <p class="footer-text">The execution of this code will run properly!</p>
+    </div>
+
+</body>
+</html>
