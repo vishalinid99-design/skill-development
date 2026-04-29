@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal Table</title>
+    <style>
+        /* Styling the table, headers, and cells */
+        table, th, td {
+            border: 1px double red;
+            border-radius: 5px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr style="height: 30px;">
+            <th>bike</th>
+            <th>car</th>
+            <th>bicycle</th>
+        </tr>
+        
+        <tr>
+            <td>KTM</td>
+            <td>AUDI</td>
+            <td>LADY BIRD</td>
+        </tr>
+    </table>
+
+</body>
+</html>

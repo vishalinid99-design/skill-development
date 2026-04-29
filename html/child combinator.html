@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* Child Combinator: Styles <section> only if it is a DIRECT child of <div> */
+        div > section {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+
+    <p>css combinators</p>
+    <p>the webpage was lookin professional</p>
+
+    <div>
+        <section>
+            <p>paragraph not used as a child</p>
+        </section>
+    </div>
+
+    <p>the webpage will get a perfect style</p>
+    <p>the execution of the coding will run properly</p>
+
+</body>
+</html>
