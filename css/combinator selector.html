@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Combinator Practice</title>
+    <style>
+        /* This targets h1 and p tags only when they are inside a div */
+        div p, div h1 {
+            background-color: rgba(70, 131, 180, 0.345);
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        /* Styling the div just to see the container */
+        div {
+            border: 2px solid steelblue;
+            padding: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Combinator selector (Outside div - no background)</p>
+
+    <div>
+        <h1>today class</h1>
+        <p>we seen about the type of combinator</p>
+        <p>this topic is descender combinator</p>
+    </div>
+
+    <p>need to understand property (Outside div - no background)</p>
+    <p>practice clearly</p>
+
+</body>
+</html>

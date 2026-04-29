@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Child Combinator</title>
+    <style>
+        /* Only <section> elements that are DIRECTLY inside a <div> will be crimson */
+        div > section {
+            color: crimson;
+            font-weight: bold;
+        }
+
+        /* Adding a border to the div so you can see the container */
+        div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>CSS Combinators: The paragraph below is inside a div > section.</p>
+
+    <div>
+        <section>
+            <p>This text is inside a section, which is a direct child of the div. It should be Crimson!</p>
+        </section>
+        
+        <article>
+            <section>
+                <p>This section is NOT a direct child (it's inside an article). It will NOT be crimson.</p>
+            </section>
+        </article>
+    </div>
+
+    <p>The execution of the coding will run properly!</p>
+
+</body>
+</html>
