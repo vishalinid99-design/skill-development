@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties Practice</title>
+    <style>
+        /* Display Classes */
+        .txt1 { display: block; }
+        .txt2 { display: flex; }
+        .txt3 { display: grid; }
+        .txt4 { display: inline; }
+        .txt5 { display: inline-block; }
+
+        /* General Styling */
+        p {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        span {
+            background-color: brown;
+            padding: 10px;
+            color: white; /* Added for readability against brown */
+        }
+
+        img {
+            width: 100px; /* Scaling images so they fit the view */
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Display Inline</h1>
+    <p class="txt4">
+        <span>banana</span>
+        <span>apple</span>
+        <span>orange</span>
+    </p>
+
+    <h2>Display Flex</h2>
+    <p class="txt2">
+        <span>blue</span>
+        <span>black</span>
+        <span>green</span>
+    </p>
+
+    <h3>Display Grid</h3>
+    <p class="txt3">
+        <span>tomato</span>
+        <span>potato</span>
+        <span>cabbage</span>
+    </p>
+
+    <h4>Display Block</h4>
+    <p class="txt1">
+        <span>mango juice</span>
+        <span>mosambi juice</span>
+        <span>orange juice</span>
+    </p>
+
+    <div class="txt5">
+        <span><img src="placeholder.jpg" alt="img1"></span>
+        <span><img src="placeholder.jpg" alt="img2"></span>
+        <span><img src="placeholder.jpg" alt="img3"></span>
+    </div>
+
+</body>
+</html>

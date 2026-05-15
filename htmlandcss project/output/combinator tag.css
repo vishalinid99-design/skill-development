@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div, h1 {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <p>today the class is about css</p>
+    <div>
+        <h1>Artificial Intelligence</h1>
+        <p>computer systems designed to perform complex tasks</p>
+        <p>traditionally requiring human intelligence, such as</p>
+    </div>
+    <p>reasoning, learning, perception, and problem-solving</p>
+</body>
+</html>
