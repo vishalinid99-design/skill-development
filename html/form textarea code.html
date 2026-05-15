@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form Registration</title>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" id="fname">
+            <br>
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="text" id="lname">
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+        <br>
+
+        <label for="college">Select University:</label>
+        <br>
+        <select name="university" id="college" size="5" multiple>
+            <option value="mgr">MGR University</option>
+            <option value="wcc">WCC University</option>
+            <option value="loyola">Loyola College</option>
+            <option value="anna">Anna University</option>
+            <option value="vels">Vels University</option>
+            <option value="dg_vaishnav">DG Vaishnav College</option>
+            <option value="sathyabama">Sathyabama University</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Your Message:</label>
+        <br>
+        <textarea name="feedback" id="message" cols="30" rows="5">HTML form we will see today</textarea>
+        
+        <br><br>
+        <button type="button">Done</button>
+        <br><br>
+
+        <label for="browser-choice">Choose a browser from the list:</label>
+        <input list="browsers" id="browser-choice" name="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Brave">
+            <option value="Safari">
+        </datalist>
+
+    </form>
+
+</body>
+</html>

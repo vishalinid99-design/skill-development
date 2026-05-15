@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Practice Page</title>
+    <style>
+        /* Table Styling from Screenshot 44 */
+        table, th, td {
+            border: 1px double red;
+            border-radius: 5px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fruit Names</h1>
+    <p>Women's play an important role in society and family.</p>
+
+    <hr>
+
+    <h3>Drinks and Snacks</h3>
+    <ul>
+        <li>tea</li>
+        <li>coffee</li>
+        <li>juice</li>
+        <ul style="list-style-type: square;">
+            <li>puff</li>
+            <li>samosa</li>
+            <li>biscuits</li>
+        </ul>
+    </ul>
+
+    <hr>
+
+    <h3>Ordered Fruit List</h3>
+    <ol>
+        <li>cherry</li>
+        <li>pineapple</li>
+        <li>strawberry</li>
+        <ol type="A">
+            <li>watermelon</li>
+            <li>mango</li>
+        </ol>
+    </ol>
+
+    <hr>
+
+    <table>
+        <tr style="height: 30px;">
+            <th>Bike</th>
+            <th>Car</th>
+            <th>Bicycle</th>
+        </tr>
+        <tr>
+            <td>KTM</td>
+            <td>AUDI</td>
+            <td>LADYBIRD</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <fieldset>
+        <legend>Registration Form</legend>
+        <form action="">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname"><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname"><br><br>
+
+            <label for="college">Select University:</label><br>
+            <select name="university" id="college" size="3" multiple>
+                <option value="mgr">MGR University</option>
+                <option value="anna">Anna University</option>
+                <option value="vels">Vels University</option>
+            </select><br><br>
+
+            <label for="browser-choice">Preferred Browser:</label><br>
+            <input list="browsers" id="browser-choice">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Edge">
+            </datalist><br><br>
+
+            <label for="msg">Message:</label><br>
+            <textarea id="msg" cols="30" rows="3">HTML form practice</textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+
+    <hr>
+
+    <h3>External Links</h3>
+    <a href="https://www.amazon.in/" target="_blank">Visit Amazon India</a>
+
+</body>
+</html>
