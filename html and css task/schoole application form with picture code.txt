@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Application Form</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f0f4f8;
+      padding:30px;
+    }
+
+    .container{
+      max-width:700px;
+      margin:auto;
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .school-image{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .form-section{
+      padding:25px;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:20px;
+      color:#003366;
+    }
+
+    label{
+      font-weight:bold;
+      margin-top:12px;
+      display:block;
+    }
+
+    input,
+    select,
+    textarea{
+      width:100%;
+      padding:10px;
+      margin-top:6px;
+      border:1px solid #ccc;
+      border-radius:6px;
+      font-size:15px;
+    }
+
+    textarea{
+      resize:vertical;
+    }
+
+    .gender{
+      margin-top:8px;
+    }
+
+    .gender input{
+      width:auto;
+      margin-right:5px;
+    }
+
+    button{
+      width:100%;
+      background:#0066cc;
+      color:white;
+      border:none;
+      padding:12px;
+      margin-top:20px;
+      border-radius:6px;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#004d99;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- School Picture -->
+    <img
+      class="school-image"
+      src="https://images.unsplash.com/photo-1580582932707-520aed937b7b"
+      alt="School Building"
+    >
+
+    <div class="form-section">
+
+      <h1>School Application Form</h1>
+
+      <form>
+
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter student name" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Gender</label>
+
+        <div class="gender">
+          <input type="radio" name="gender"> Male
+          <input type="radio" name="gender"> Female
+          <input type="radio" name="gender"> Other
+        </div>
+
+        <label>Class Applying For</label>
+        <select required>
+          <option value="">Select Class</option>
+          <option>Grade 1</option>
+          <option>Grade 2</option>
+          <option>Grade 3</option>
+          <option>Grade 4</option>
+          <option>Grade 5</option>
+        </select>
+
+        <label>Parent/Guardian Name</label>
+        <input type="text" placeholder="Enter parent name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Home Address</label>
+        <textarea rows="4" placeholder="Enter address"></textarea>
+
+        <label>Upload Student Photo</label>
+        <input type="file">
+
+        <button type="submit">Submit Application</button>
+
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>

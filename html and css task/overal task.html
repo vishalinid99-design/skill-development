@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Fruit Shop</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4fff4;
+    }
+
+    header{
+      background:#28a745;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      background:#1e7e34;
+      padding:12px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    .hero{
+      background:url('https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=1200&auto=format&fit=crop') center/cover;
+      height:300px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-shadow:2px 2px 5px black;
+      font-size:40px;
+      font-weight:bold;
+    }
+
+    .container{
+      padding:40px;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:30px;
+      color:#2d572c;
+    }
+
+    .fruit-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .fruit-card{
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .fruit-card:hover{
+      transform:scale(1.05);
+    }
+
+    .fruit-card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .fruit-card h3{
+      margin:15px 0 10px;
+      color:#333;
+    }
+
+    .fruit-card p{
+      color:#666;
+      margin-bottom:15px;
+    }
+
+    .fruit-card button{
+      background:#28a745;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      margin-bottom:20px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    .fruit-card button:hover{
+      background:#218838;
+    }
+
+    footer{
+      background:#1e7e34;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Fresh Fruit Shop</h1>
+    <p>Healthy & Fresh Fruits Every Day</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Fruits</a>
+    <a href="#">Offers</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Fresh Organic Fruits
+  </div>
+
+  <div class="container">
+
+    <h2>Our Popular Fruits</h2>
+
+    <div class="fruit-grid">
+
+      <div class="fruit-card">
+        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Apple">
+        <h3>Apple</h3>
+        <p>Fresh and juicy apples.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="fruit-card">
+        <img src="https://images.unsplash.com/photo-1574226516831-e1dff420e37f" alt="Banana">
+        <h3>Banana</h3>
+        <p>Sweet organic bananas.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="fruit-card">
+        <img src="https://images.unsplash.com/photo-1547514701-42782101795e" alt="Orange">
+        <h3>Orange</h3>
+        <p>Vitamin C rich oranges.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="fruit-card">
+        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b" alt="Watermelon">
+        <h3>Watermelon</h3>
+        <p>Cool and refreshing watermelon.</p>
+        <button>Buy Now</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Fresh Fruit Shop | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>s

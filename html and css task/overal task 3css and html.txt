@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Food Menu</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f4f4;
+      margin:0;
+      padding:0;
+    }
+
+    .menu{
+      width:70%;
+      margin:40px auto;
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      text-align:center;
+      color:#d35400;
+      margin-bottom:30px;
+    }
+
+    .item{
+      display:flex;
+      justify-content:space-between;
+      padding:15px 0;
+      border-bottom:1px solid #ddd;
+    }
+
+    .item:last-child{
+      border-bottom:none;
+    }
+
+    .food-name{
+      font-size:20px;
+      font-weight:bold;
+      color:#333;
+    }
+
+    .price{
+      font-size:20px;
+      color:#d35400;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu">
+
+    <h1>Indian Food Menu</h1>
+
+    <div class="item">
+      <div class="food-name">Butter Chicken</div>
+      <div class="price">₹250</div>
+    </div>
+
+    <div class="item">
+      <div class="food-name">Chicken Biryani</div>
+      <div class="price">₹220</div>
+    </div>
+
+    <div class="item">
+      <div class="food-name">Masala Dosa</div>
+      <div class="price">₹90</div>
+    </div>
+
+    <div class="item">
+      <div class="food-name">Paneer Butter Masala</div>
+      <div class="price">₹180</div>
+    </div>
+
+    <div class="item">
+      <div class="food-name">Veg Fried Rice</div>
+      <div class="price">₹140</div>
+    </div>
+
+    <div class="item">
+      <div class="food-name">Tandoori Chicken</div>
+      <div class="price">₹300</div>
+    </div>
+
+    <div class="item">
+      <div class="food-name">Samosa</div>
+      <div class="price">₹25</div>
+    </div>
+
+    <div class="item">
+      <div class="food-name">Gulab Jamun</div>
+      <div class="price">₹60</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

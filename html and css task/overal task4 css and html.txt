@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#f4f4f4;
+    }
+
+    .menu-container{
+      width:80%;
+      margin:40px auto;
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      text-align:center;
+      color:#ff6600;
+      margin-bottom:30px;
+    }
+
+    .menu-item{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 0;
+      border-bottom:1px solid #ddd;
+    }
+
+    .menu-item:last-child{
+      border-bottom:none;
+    }
+
+    .food-name{
+      font-size:20px;
+      font-weight:bold;
+      color:#333;
+    }
+
+    .food-desc{
+      color:#777;
+      font-size:14px;
+    }
+
+    .price{
+      color:#ff6600;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .order-btn{
+      background:#ff6600;
+      color:white;
+      border:none;
+      padding:8px 15px;
+      border-radius:5px;
+      cursor:pointer;
+      margin-left:15px;
+    }
+
+    .order-btn:hover{
+      background:#cc5200;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu-container">
+
+    <h1>Food Menu</h1>
+
+    <div class="menu-item">
+      <div>
+        <div class="food-name">Pizza</div>
+        <div class="food-desc">Cheesy delicious pizza</div>
+      </div>
+
+      <div>
+        <span class="price">$12</span>
+        <button class="order-btn">Order</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <div class="food-name">Burger</div>
+        <div class="food-desc">Chicken burger with cheese</div>
+      </div>
+
+      <div>
+        <span class="price">$8</span>
+        <button class="order-btn">Order</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <div class="food-name">Pasta</div>
+        <div class="food-desc">Creamy Italian pasta</div>
+      </div>
+
+      <div>
+        <span class="price">$10</span>
+        <button class="order-btn">Order</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <div class="food-name">French Fries</div>
+        <div class="food-desc">Crispy hot fries</div>
+      </div>
+
+      <div>
+        <span class="price">$5</span>
+        <button class="order-btn">Order</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
